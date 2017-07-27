@@ -14,9 +14,12 @@ the answers to the leetcode questions
 
 <code>
   
-g++ -o 001_two_sum.o -c ./leetcode/src/001_Two_Sum.c  -I ./leetcode/include/
-g++ -o leetcode_test.o -c ./testcase/src/leetcode_test.cpp -I ./ -I ./leetcode/include/
-g++ -o TestAll.o -c ./gtest/main/TestAll.cpp -I ./
-g++ -o main *.o -I./include -L./gtest/lib -lgtest -lpthread\
+    g++ -o 001_two_sum.o -c ./leetcode/src/001_Two_Sum.c  -I ./leetcode/include/
+
+    g++ -o leetcode_test.o -c ./testcase/src/leetcode_test.cpp -I ./ -I ./leetcode/include/
+
+    g++ -o TestAll.o -c ./gtest/main/TestAll.cpp -I ./
+
+    g++ -o main *.o -I./include -L./gtest/lib -lgtest -lpthread\
 
 </code>
