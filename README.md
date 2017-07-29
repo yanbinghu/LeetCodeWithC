@@ -6,8 +6,9 @@ the answers to the leetcode questions
 ├── gtest        //google test
 ├── leetcode     //source code
 ├── main         //run file
-├── Makefile      // Make file ,to do
+├── Makefile      // Make file 
 ├── README.md     //
+├── buildAndRun.sh  //run shell
 └── testcase      //test case file
 ```
 
@@ -29,6 +30,6 @@ the answers to the leetcode questions
 
 ## update
 
-for run the test ,you can execute the commond 
+to run the test ,you can execute the commond 
 
 ./buildAndRun.sh 
