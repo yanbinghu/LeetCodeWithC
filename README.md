@@ -24,3 +24,11 @@ the answers to the leetcode questions
     g++ -o main *.o -I./include -L./gtest/lib -lgtest -lpthread\
 
 ```
+
+
+
+## update
+
+for run the test ,you can execute the commond 
+
+./buildAndRun.sh 
