@@ -29,3 +29,25 @@ TEST(two_sum_test,twoSum001)
        ASSERT_EQ(0,*result);
 }
 
+TEST(add_two_numbers_test,addTwoNumbers001)
+{
+
+    struct ListNode l1 = {1,NULL};
+    struct ListNode l2 = {2,NULL};
+    struct ListNode* result = NULL;
+    result = addTwoNumbers(&l1,&l2);
+    ASSERT_EQ(3,result->val);
+    free(result);
+}
+
+TEST(add_two_numbers_test,addTwoNumbers002)
+{
+    /*1 +9 = 10*/
+    struct ListNode l1 = {1,NULL};
+    struct ListNode l2 = {9,NULL};
+    struct ListNode* result = NULL;
+    result = addTwoNumbers(&l1,&l2);
+    ASSERT_EQ(0,result->val);
+    ASSERT_EQ(1,result->next->val);
+    free(result);
+}
