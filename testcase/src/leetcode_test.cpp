@@ -10,7 +10,7 @@
 //leetcode_test.cpp
 #include "gtest/gtest.h"
 #include "leetcode_functions.h"
-
+#include "leetcode_utils.h"
 TEST(two_sum_test,twoSum001)
 {
     int nums[4]={2,7,11,15};
@@ -49,5 +49,16 @@ TEST(add_two_numbers_test,addTwoNumbers002)
     result = addTwoNumbers(&l1,&l2);
     ASSERT_EQ(0,result->val);
     ASSERT_EQ(1,result->next->val);
+    free(result);
+}
+TEST(add_two_numbers_test,addTwoNumbers003)
+{
+    /*1 +9 = 10*/
+    struct ListNode l1 = {1,NULL};
+    struct ListNode l2 = {9,NULL};
+    struct ListNode* result = NULL;
+    result = addTwoNumbers(&l1,&l2);
+    int ret[] = {0,1};
+    ASSERT_EQ(FALSE,leet_judge_two_numbers_result(result,ret,2));
     free(result);
 }
