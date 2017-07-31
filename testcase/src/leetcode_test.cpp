@@ -1,6 +1,6 @@
 /**************************************************************
 *   Copyright (C) 2017 All rights reserved.
-*   
+*
 *   文件名称：leetcode_test.cpp
 *   创 建 者：hyb
 *   创建日期：2017年07月26日
@@ -20,5 +20,12 @@ TEST(two_sum_test,twoSum001)
 
        ASSERT_EQ(0,*result);
        ASSERT_EQ(1,*(result+1));
+       target = 17;
+     result = twoSum(nums,numsSize,target);
+
+       ASSERT_EQ(0,*result);
+       ASSERT_EQ(3,*(result+1));
+       result= twoSum(NULL,numsSize,target);
+       ASSERT_EQ(0,*result);
 }
 
