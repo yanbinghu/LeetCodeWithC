@@ -18,7 +18,13 @@ struct ListNode {
   };
 
 
-
+/*001,two sum*/
 int* twoSum(int* nums, int numsSize, int target);
+
+/*002 add two numbers*/
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2);
+
+/*hanmingDistance*/
+int hammingDistance(int x,int y);
+
 #endif
