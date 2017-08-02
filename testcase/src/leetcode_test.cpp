@@ -72,3 +72,10 @@ TEST(hamming_distance_test,hammingDistance001)
 
     ASSERT_EQ(4,hammingDistance(144,23));
 }
+
+TEST(number_complement_test,findComplement001)
+{
+    ASSERT_EQ(2,findComplement(5));
+
+    ASSERT_EQ(0,findComplement(1));
+}

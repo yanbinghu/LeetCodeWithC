@@ -27,4 +27,6 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2);
 /*hanmingDistance*/
 int hammingDistance(int x,int y);
 
+/*476,number complement*/
+int findComplement(int num);
 #endif
