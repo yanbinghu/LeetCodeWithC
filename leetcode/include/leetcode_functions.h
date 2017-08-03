@@ -29,4 +29,6 @@ int hammingDistance(int x,int y);
 
 /*476,number complement*/
 int findComplement(int num);
+/*344,reverse string*/
+char* reverseString(char* s);
 #endif

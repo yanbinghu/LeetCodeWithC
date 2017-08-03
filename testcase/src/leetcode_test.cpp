@@ -79,3 +79,10 @@ TEST(number_complement_test,findComplement001)
 
     ASSERT_EQ(0,findComplement(1));
 }
+TEST(reverse_string_test,reverseString001)
+{
+    char s[] = "hello";
+    ASSERT_STREQ("olleh",reverseString(s));
+    char s1[] = "Delia sai";
+    ASSERT_STREQ("ias aileD",reverseString(s1));
+}
