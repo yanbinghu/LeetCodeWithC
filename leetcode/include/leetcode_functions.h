@@ -31,4 +31,7 @@ int hammingDistance(int x,int y);
 int findComplement(int num);
 /*344,reverse string*/
 char* reverseString(char* s);
+
+/*258*/
+int addDigits(int num);
 #endif

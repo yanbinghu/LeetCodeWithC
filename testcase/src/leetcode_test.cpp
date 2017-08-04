@@ -86,3 +86,8 @@ TEST(reverse_string_test,reverseString001)
     char s1[] = "Delia sai";
     ASSERT_STREQ("ias aileD",reverseString(s1));
 }
+TEST(add_digits_test,addDigits001)
+{
+    ASSERT_EQ(2,addDigits(38));
+    ASSERT_EQ(6,addDigits(111111));
+}
