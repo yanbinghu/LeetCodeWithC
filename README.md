@@ -50,7 +50,7 @@ to run the test ,you can execute the commond
 ./buildAndRun.sh 
 
 
-the article link  ：http://www.huyanbing.me/2017/08/02/leetcode%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90/
+the article link  ：http://www.huyanbing.me/2017/08/04/leetcode%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90/
 ### 001  Two Sum
 ##### 题目：
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
