@@ -8,7 +8,7 @@
 *
 ***************************************************************/
 //leetcode_test.cpp
-#include "gtest/gtest.h"
+#include "googletest.h"
 #include "leetcode_functions.h"
 #include "leetcode_utils.h"
 TEST(two_sum_test,twoSum001)
