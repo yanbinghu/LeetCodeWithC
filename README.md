@@ -1,3 +1,17 @@
+# 如何运行？
+下载源代码后，解压。
+下载[lcov](http://ltp.sourceforge.net/coverage/lcov.php)
+安装lcov make install。
+完成后，运行./buildAndRun.sh即可，最后运行测试用例，生成覆盖率报告。
+
+如果不想安装lcov或者不想生成覆盖率报告，则可以将
+buidlAndRun.sh中的以下两句，前面加#注释掉
+```
+#lcov -c -o main.info -d .
+#生成html
+#genhtml main.info -o ./gcov
+```
+
 # LeetCodeWithC
 the answers to the leetcode questions
 
@@ -5,6 +19,7 @@ the answers to the leetcode questions
 ```
 ├── gtest        //google test
 ├── leetcode     //source code
+├── gcov    //coverage report
 ├── main         //run file
 ├── Makefile      // Make file 
 ├── README.md     //
