@@ -2,7 +2,7 @@ CC = g++
 testdir = gmock
 LIBS = -L ./$(testdir)/lib/
 LIBS+= -lgmock
-CFLAGS =  -lpthread
+CFLAGS =  -lpthread -fprofile-arcs -ftest-coverage
 INCLUDE= -I ./testcase/include/\
 		-I ./leetcode/include/ \
 		-I ./ 
@@ -23,10 +23,10 @@ all: $(TARGET)
 $(TARGET): $(LEETOBJ) $(CASEOBJ) $(MAINOBJ)
 	$(CC)  -o $@ $^  $(LIBS) $(CFLAGS) $(INCLUDE)
 .c.o:$(LEETCODESRC)
-	$(CC) -c $(INCLUDE) -o  $@ $< 
+	$(CC) -c $(INCLUDE) $(CFLAGS) -o  $@ $< 
 
 .cpp.o:$(TESTCASESRC) $(MAINOBJ)
-	$(CC) -c  $(INCLUDE) -o $@ $<
+	$(CC) -c  $(INCLUDE) $(CFLAGS) -o $@ $<
 
 
 SUBDIR = $(shell ls ./ -R | grep /)

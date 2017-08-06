@@ -17,14 +17,10 @@ leetcode_return  leet_judge_two_numbers_result(struct ListNode * result,int* ret
         printf("result is null");
         return FALSE;
     }
-    for(loop = 0;loop < num;loop ++)
+    for(loop = 0;loop < num;loop++)
     {
 
-        if(result->val == retArr[loop])
-        {
-            continue;
-        }
-        else
+        if(result->val != retArr[loop])
         {
             break;
         }
