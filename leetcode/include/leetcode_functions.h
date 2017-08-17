@@ -34,4 +34,7 @@ char* reverseString(char* s);
 
 /*258*/
 int addDigits(int num);
+/*237 delete node in a Link lIST*/
+void deleteNode(struct ListNoe* node);
+
 #endif
