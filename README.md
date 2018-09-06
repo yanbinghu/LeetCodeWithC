@@ -1,6 +1,7 @@
 # LeetcodeWitchC #
 
-[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
+[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
+
 # 如何运行？
 下载源代码后，解压。
 下载[lcov](http://ltp.sourceforge.net/coverage/lcov.php)
