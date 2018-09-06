@@ -37,4 +37,6 @@ int addDigits(int num);
 /*237 delete node in a Link lIST*/
 void deleteNode(struct ListNoe* node);
 
+/*540  Single Element in a Sorted Array*/
+int singleNonDuplicate(int* nums, int numsSize);
 #endif

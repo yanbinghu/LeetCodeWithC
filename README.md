@@ -1,6 +1,6 @@
 # LeetcodeWitchC#
 
-[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Coveralls github branch](https://img.shields.io/badge/coverage-97.2-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
+[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
 # 如何运行？
 下载源代码后，解压。
 下载[lcov](http://ltp.sourceforge.net/coverage/lcov.php)
@@ -53,7 +53,7 @@ to run the test ,you can execute the commond
 ./buildAndRun.sh 
 
 
-the article link  ：http://www.huyanbing.me/2017/08/04/leetcode%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90/
+the article link  ：[leetcode题目解析](https://www.huyanbing.me/2017/08/04/64636.html)
 ### 001  Two Sum
 ##### 题目：
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
