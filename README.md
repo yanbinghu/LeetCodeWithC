@@ -2,7 +2,10 @@
 
 [![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
 
-# 如何运行？
+# LeetCodeWithC
+the answers to the leetcode questions
+
+# How to run？
 下载源代码后，解压。
 下载[lcov](http://ltp.sourceforge.net/coverage/lcov.php)
 安装lcov make install。
@@ -16,8 +19,6 @@ buidlAndRun.sh中的以下两句，前面加#注释掉
 #genhtml main.info -o ./gcov
 ```
 
-# LeetCodeWithC
-the answers to the leetcode questions
 
 ## dir 
 ```
@@ -30,6 +31,10 @@ the answers to the leetcode questions
 ├── buildAndRun.sh  //run shell
 └── testcase      //test case file
 ```
+## coverage
+
+![coverage](./cov.png)
+## directory
 * [001_two_sum](#001_two_sum)
 * [002_add_two_numbers](#002_add_two_numbers)
 * [258_add_digits](#258_add_digits)
