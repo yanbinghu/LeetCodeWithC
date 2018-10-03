@@ -7,6 +7,26 @@
 *   描    述：
 *
 ***************************************************************/
+/**************************************************************
+题目：
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+
+释义：
+给定两个非空链表代表两个非负整数，整数的各位数以逆序存储在链表的每个节点中。将这两个数相加，并返回结果链表。
+
+分析:
+
+题意较清晰，是将用链表形式的两个整数进行相加，并返回链表结果。
+需要注意的主要有以下几点
+1.加完之后需要给下一位子进位。
+2.如果链表只有一位，直接计算结果，提高效率。
+3.考虑两个链表长度不一样的场景
+/*************************************************************/
 /**
  * Definition for singly-linked list.
  * struct ListNode {

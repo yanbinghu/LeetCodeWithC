@@ -1,6 +1,6 @@
 # LeetcodeWitchC #
 
-[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)[![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
+[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
 
 # 如何运行？
 下载源代码后，解压。
@@ -30,32 +30,14 @@ the answers to the leetcode questions
 ├── buildAndRun.sh  //run shell
 └── testcase      //test case file
 ```
+* [001_two_sum](#001_two_sum)
+* [002_add_two_numbers](#002_add_two_numbers)
+* [258_add_digits](#258_add_digits)
+* [344_reverse_string](#344_reverse_string)
+* [463_hamming_istance](#463_hamming_istance)
+* [476_number_complement](#476_number_complement)
 
-## compile
-
-```
-  
-    g++ -o 001_two_sum.o -c ./leetcode/src/001_Two_Sum.c  -I ./leetcode/include/
-
-    g++ -o leetcode_test.o -c ./testcase/src/leetcode_test.cpp -I ./ -I ./leetcode/include/
-
-    g++ -o TestAll.o -c ./gtest/main/TestAll.cpp -I ./
-
-    g++ -o main *.o -I./include -L./gtest/lib -lgtest -lpthread\
-
-```
-
-
-
-## update
-
-to run the test ,you can execute the commond 
-
-./buildAndRun.sh 
-
-
-the article link  ：[leetcode题目解析](https://www.huyanbing.me/2017/08/04/64636.html)
-### 001  Two Sum
+### 001_two_sum
 ##### 题目：
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
@@ -75,7 +57,7 @@ return [0, 1].
 例如，输入[1,7,11,15],目标值26，那么循环计算1+7,1+11,1+15，7+11,7+15......，直到得到目标值。
 ##### 代码地址如下：
 [001 two sum](https://github.com/yanbinghu/LeetCodeWithC/blob/master/leetcode/src/001_Two_Sum.c)
-### 002 Add Two Numbers
+### 002_add_two_numbers
 
 #####  题目：
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
@@ -98,7 +80,7 @@ Output: 7 -> 0 -> 8
 
 ##### 代码地址如下：
 [002 Add Two Numbers](https://github.com/yanbinghu/LeetCodeWithC/blob/master/leetcode/src/002_Add_Two_Numbers.c)
-### 258 Add Digits
+### 258_add_digits
 ##### 题目：
 Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
 
@@ -115,7 +97,7 @@ Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one
 ##### 代码地址如下：
 [258 Add Digits](https://github.com/yanbinghu/LeetCodeWithC/blob/master/leetcode/src/258_Add_Digits.c)
 
-### 344 Reverse String
+### 344_reverse_string
 ##### 题目：
 Write a function that takes a string as input and returns the string reversed.
 
@@ -129,7 +111,7 @@ Given s = "hello", return "olleh".
 ##### 代码地址如下：
 [344 Reverse String](https://github.com/yanbinghu/LeetCodeWithC/blob/master/leetcode/src/344_Reverse_String.c)
 
-### 463 Hamming Distance
+### 463_hamming_istance
 ##### 题目：
 The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
 
@@ -161,7 +143,7 @@ The above arrows point to positions where the corresponding bits are different.
 
 
 
-### 476 Number Complement
+### 476_number_complement
 
 ##### 题目：
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.

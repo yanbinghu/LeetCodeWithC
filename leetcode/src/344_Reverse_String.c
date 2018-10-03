@@ -7,6 +7,18 @@
 *   描    述：
 *
 ***************************************************************/
+/**************************************************************
+344 Reverse String
+题目：
+Write a function that takes a string as input and returns the string reversed.
+
+Example:
+Given s = "hello", return "olleh".
+释义：
+字符串翻转
+分析
+头尾对应位置的字符位置调换
+***************************************************************/
 #include"leetcode_functions.h"
 char* reverseString(char* s)
 {
