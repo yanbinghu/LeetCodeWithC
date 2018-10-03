@@ -1,11 +1,11 @@
-# LeetcodeWitchC #
-
-[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
 
 # LeetCodeWithC
 the answers to the leetcode questions
 
-# How to run？
+[![Travis (.org)](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Coveralls github branch](https://img.shields.io/badge/coverage-97.5-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)  [![Travis (.org)](https://img.shields.io/badge/platform-linux-green.svg)](https://github.com/yanbinghu/LeetCodeWithC)
+
+
+# 如何运行？
 下载源代码后，解压。
 下载[lcov](http://ltp.sourceforge.net/coverage/lcov.php)
 安装lcov make install。
@@ -20,7 +20,7 @@ buidlAndRun.sh中的以下两句，前面加#注释掉
 ```
 
 
-## dir 
+# 代码目录结构
 ```
 ├── gtest        //google test
 ├── leetcode     //source code
@@ -31,10 +31,10 @@ buidlAndRun.sh中的以下两句，前面加#注释掉
 ├── buildAndRun.sh  //run shell
 └── testcase      //test case file
 ```
-## coverage
+# 覆盖率报告
 
 ![coverage](./cov.png)
-## directory
+# 题目总览
 * [001_two_sum](#001_two_sum)
 * [002_add_two_numbers](#002_add_two_numbers)
 * [258_add_digits](#258_add_digits)
