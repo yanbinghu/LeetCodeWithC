@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-09-06 15:59:58</td>
+            <td class="headerValue">2018-10-03 11:41:57</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -68,27 +68,41 @@
 <span class="lineNum">       6 </span>            : *   创建日期：2017年08月04日
 <span class="lineNum">       7 </span>            : *   描    述：
 <span class="lineNum">       8 </span>            : *
-<a name="9"><span class="lineNum">       9 </span>            : ***************************************************************/</a>
-<span class="lineNum">      10 </span>            : #include&quot;leetcode_functions.h&quot;
-<span class="lineNum">      11 </span><span class="lineCov">          5 : int addDigits(int num)</span>
-<span class="lineNum">      12 </span>            : {
-<span class="lineNum">      13 </span><span class="lineCov">          5 :     int temp = num;</span>
-<span class="lineNum">      14 </span><span class="lineCov">          5 :     if(0 == num/10)</span>
-<span class="lineNum">      15 </span>            :     {
-<span class="lineNum">      16 </span><span class="lineCov">          2 :         return num;</span>
-<span class="lineNum">      17 </span>            :     }
-<span class="lineNum">      18 </span>            :     else
-<span class="lineNum">      19 </span>            :     {
-<span class="lineNum">      20 </span><span class="lineCov">          3 :         num =0;</span>
-<span class="lineNum">      21 </span><span class="lineCov">         17 :         while(0 != temp/10)</span>
-<span class="lineNum">      22 </span>            :         {
-<span class="lineNum">      23 </span><span class="lineCov">          7 :             num +=temp%10;</span>
-<span class="lineNum">      24 </span><span class="lineCov">          7 :             temp = temp/10;</span>
-<span class="lineNum">      25 </span>            :         }
-<span class="lineNum">      26 </span><span class="lineCov">          3 :         num = num+temp;</span>
-<span class="lineNum">      27 </span><span class="lineCov">          3 :        return  addDigits(num);</span>
-<span class="lineNum">      28 </span>            :     }
-<span class="lineNum">      29 </span>            : }
+<span class="lineNum">       9 </span>            : ***************************************************************/
+<span class="lineNum">      10 </span>            : /*************************************************************
+<span class="lineNum">      11 </span>            : 题目：
+<span class="lineNum">      12 </span>            : Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : For example:
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            : Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
+<span class="lineNum">      17 </span>            : 
+<span class="lineNum">      18 </span>            : 释义：
+<span class="lineNum">      19 </span>            : 计算各位数之和，直到最后只有一位。
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : 分析：
+<span class="lineNum">      22 </span>            : 计算各位数之和，采用递归，计算一次后，再次调用，直到结果位各位数。
+<a name="23"><span class="lineNum">      23 </span>            : *************************************************************/</a>
+<span class="lineNum">      24 </span>            : #include&quot;leetcode_functions.h&quot;
+<span class="lineNum">      25 </span><span class="lineCov">          5 : int addDigits(int num)</span>
+<span class="lineNum">      26 </span>            : {
+<span class="lineNum">      27 </span><span class="lineCov">          5 :     int temp = num;</span>
+<span class="lineNum">      28 </span><span class="lineCov">          5 :     if(0 == num/10)</span>
+<span class="lineNum">      29 </span>            :     {
+<span class="lineNum">      30 </span><span class="lineCov">          2 :         return num;</span>
+<span class="lineNum">      31 </span>            :     }
+<span class="lineNum">      32 </span>            :     else
+<span class="lineNum">      33 </span>            :     {
+<span class="lineNum">      34 </span><span class="lineCov">          3 :         num =0;</span>
+<span class="lineNum">      35 </span><span class="lineCov">         17 :         while(0 != temp/10)</span>
+<span class="lineNum">      36 </span>            :         {
+<span class="lineNum">      37 </span><span class="lineCov">          7 :             num +=temp%10;</span>
+<span class="lineNum">      38 </span><span class="lineCov">          7 :             temp = temp/10;</span>
+<span class="lineNum">      39 </span>            :         }
+<span class="lineNum">      40 </span><span class="lineCov">          3 :         num = num+temp;</span>
+<span class="lineNum">      41 </span><span class="lineCov">          3 :        return  addDigits(num);</span>
+<span class="lineNum">      42 </span>            :     }
+<span class="lineNum">      43 </span>            : }
 </pre>
       </td>
     </tr>

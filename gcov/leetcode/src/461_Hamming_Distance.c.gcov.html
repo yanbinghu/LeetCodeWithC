@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2018-09-06 15:59:58</td>
+            <td class="headerValue">2018-10-03 11:41:57</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">1</td>
@@ -68,25 +68,53 @@
 <span class="lineNum">       6 </span>            : *   创建日期：2017年08月01日
 <span class="lineNum">       7 </span>            : *   描    述：
 <span class="lineNum">       8 </span>            : *
-<a name="9"><span class="lineNum">       9 </span>            : ***************************************************************/</a>
-<span class="lineNum">      10 </span>            : #include &quot;leetcode_functions.h&quot;
-<span class="lineNum">      11 </span><span class="lineCov">          3 : int hammingDistance(int x,int y)</span>
-<span class="lineNum">      12 </span>            : {
-<span class="lineNum">      13 </span><span class="lineCov">          3 :     int result = 0;</span>
-<span class="lineNum">      14 </span>            :     /*get the temp result*/
-<span class="lineNum">      15 </span><span class="lineCov">          3 :     int temp = x^y;</span>
-<span class="lineNum">      16 </span>            :     /*calc the 1 of temp result*/
-<span class="lineNum">      17 </span><span class="lineCov">         23 :     while (temp != 0)</span>
-<span class="lineNum">      18 </span>            :     {
-<span class="lineNum">      19 </span><span class="lineCov">         10 :         if (temp % 2 == 1)</span>
-<span class="lineNum">      20 </span>            :         {
-<span class="lineNum">      21 </span><span class="lineCov">          6 :             result++;</span>
-<span class="lineNum">      22 </span>            :         }
-<span class="lineNum">      23 </span><span class="lineCov">         10 :         temp = temp &gt;&gt;1;</span>
-<span class="lineNum">      24 </span>            :     }
-<span class="lineNum">      25 </span><span class="lineCov">          3 :     printf(&quot; the hamming distance is %d\n&quot;,result);</span>
-<span class="lineNum">      26 </span><span class="lineCov">          3 :    return result;</span>
-<span class="lineNum">      27 </span>            : }
+<span class="lineNum">       9 </span>            : ***************************************************************/
+<span class="lineNum">      10 </span>            : /**************************************************************
+<span class="lineNum">      11 </span>            : 题目：
+<span class="lineNum">      12 </span>            : The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : Given two integers x and y, calculate the Hamming distance.
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span>            : Note:
+<span class="lineNum">      17 </span>            : 0 ≤ x, y &lt; 231.
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            : Example:
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : Input: x = 1, y = 4
+<span class="lineNum">      22 </span>            : 
+<span class="lineNum">      23 </span>            : Output: 2
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span>            : Explanation:
+<span class="lineNum">      26 </span>            : 1   (0 0 0 1)
+<span class="lineNum">      27 </span>            : 4   (0 1 0 0)
+<span class="lineNum">      28 </span>            :        ?   ?
+<span class="lineNum">      29 </span>            : 
+<span class="lineNum">      30 </span>            : The above arrows point to positions where the corresponding bits are different.
+<span class="lineNum">      31 </span>            : 
+<span class="lineNum">      32 </span>            : 释义：
+<span class="lineNum">      33 </span>            : 
+<span class="lineNum">      34 </span>            : 分析：
+<span class="lineNum">      35 </span>            : 两个数的汉明距离，可以理解为，二进制的情况下，两个数异或之后的数的1的个数。
+<span class="lineNum">      36 </span>            : 比如例子中，1和4,0001与0100异或得：0101，而0101中1的个数，即为汉明距离，可以理解位，从0001，变成0100，需要改变的位数。
+<a name="37"><span class="lineNum">      37 </span>            : ***************************************************************/</a>
+<span class="lineNum">      38 </span>            : #include &quot;leetcode_functions.h&quot;
+<span class="lineNum">      39 </span><span class="lineCov">          3 : int hammingDistance(int x,int y)</span>
+<span class="lineNum">      40 </span>            : {
+<span class="lineNum">      41 </span><span class="lineCov">          3 :     int result = 0;</span>
+<span class="lineNum">      42 </span>            :     /*get the temp result*/
+<span class="lineNum">      43 </span><span class="lineCov">          3 :     int temp = x^y;</span>
+<span class="lineNum">      44 </span>            :     /*calc the 1 of temp result*/
+<span class="lineNum">      45 </span><span class="lineCov">         23 :     while (temp != 0)</span>
+<span class="lineNum">      46 </span>            :     {
+<span class="lineNum">      47 </span><span class="lineCov">         10 :         if (temp % 2 == 1)</span>
+<span class="lineNum">      48 </span>            :         {
+<span class="lineNum">      49 </span><span class="lineCov">          6 :             result++;</span>
+<span class="lineNum">      50 </span>            :         }
+<span class="lineNum">      51 </span><span class="lineCov">         10 :         temp = temp &gt;&gt;1;</span>
+<span class="lineNum">      52 </span>            :     }
+<span class="lineNum">      53 </span><span class="lineCov">          3 :     printf(&quot; the hamming distance is %d\n&quot;,result);</span>
+<span class="lineNum">      54 </span><span class="lineCov">          3 :    return result;</span>
+<span class="lineNum">      55 </span>            : }
 </pre>
       </td>
     </tr>
